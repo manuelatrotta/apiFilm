@@ -28,6 +28,7 @@ request.onload = function () {
       for (var i = 0; i < data.results.length; i++) {
         console.log(data.results[i]);
         const card = document.createElement('div');
+        card.setAttribute('class', 'card');
 
         const h1 = document.createElement('h1');
         h1.textContent = data.results[i].title;
