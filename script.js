@@ -31,12 +31,9 @@ request.onload = function () {
 
         const h1 = document.createElement('h1');
         h1.textContent = data.results[i].title;
-
-
-
         container.appendChild(card);
         card.appendChild(h1);
-    
+
       }
   } else {
     const errorMessage = document.createElement('errore');
